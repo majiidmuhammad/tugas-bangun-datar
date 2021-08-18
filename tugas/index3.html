@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function bangunDatarComponent(pilih) {
+        if(pilih == "persegi") {
+            var sisiA = prompt("masukan sisi")
+            var sisiB = prompt("masukan sisi")
+            var hasil = sisiA*sisiB
+            document.write("<b>persegi</b> <br>")
+            document.write("sisi: ", sisiA, "<br>")
+            document.write("sisi: ", sisiB, "<br>")
+            document.write("hasil menghitung s x s: ", hasil)
+        }
+        else if(pilih == "persegi panjang"){
+            var panjang = prompt("masukan panjang")
+            var lebar = prompt("masukan lebar")
+            var hasil = panjang*lebar
+            document.write("<b>persegi panjang</b> <br>")
+            document.write("panjang: ", panjang, "<br>")
+            document.write("lebar: ", lebar, "<br>")
+            document.write("hasil menghitung panjang x lebar: ", hasil)
+        }
+        else if(pilih == "segitiga"){
+            var alas = prompt("masukan alas")
+            var tinggi = prompt("masukan tinggi")
+            var setengah = 1/2
+            var hasil = setengah*alas*tinggi
+            document.write("<b>segitiga</b> <br>")
+            document.write("setengah: ", setengah, "<br>")
+            document.write("alas: ", alas, "<br>")
+            document.write("tinggi: ", tinggi, "<br>")
+            document.write("hasil menghitung 1/2 x alas x tinggi: ", hasil)
+        }else if(pilih == "jajargenjang"){
+            var alas = prompt("masukan alas")
+            var tinggi = prompt("masukan tinggi")
+            var hasil = alas*tinggi
+            document.write("<b>jajargenjang</b> <br>")
+            document.write("alas: ", alas, "<br>")
+            document.write("tinggi: ", tinggi, "<br>")
+            document.write("hasil menghitung alas x tinggi: ", hasil)
+        }
+    }
+
+    function bangunDatar() {
+            var bd;
+            var inputOne;
+            var inputTwo;
+            var result;
+
+            bd = prompt("Masukkan Jenis Bangun Datar");
+            // inputOne = prompt("Masukkan Sisi Pertama");
+            // inputTwo = prompt("Masukkan Sisi Kedua");
+
+            // result = inputTwo * inputTwo;
+
+            // alert(result);   
+            bangunDatarComponent(bd)
+        }
+
+        bangunDatar();
+    </script>
+</body>
+</html>
